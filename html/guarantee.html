@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Sách Bảo Hành - Cửa hàng Đom Đóm</title>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/conf.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style-mobile.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <img src="../img/logo.png" alt="Đom Đóm Icon" width="50" class="rounded">
+                <div class="d-flex flex-column lh-sm">
+                    <span class="fw-bold fs-5">Đom đóm</span>
+                    <small class="text-light" style="font-size: 0.4em;">
+                        "Nhỏ bé như ánh sao,<br> mát lành như vũ trụ"
+                    </small>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/guarantee.html">Bảo hành</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/contact.html">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/blog.html">Blog</a></li>
+                </ul>
+
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex mx-3 flex-grow-1" role="search">
+                    <div class="input-group">
+                        <input class="form-control rounded-start-pill input-focus" type="search"
+                            placeholder="Bạn tìm gì..." aria-label="Search">
+                        <span class="input-group-text bg-white border-0 rounded-end-pill">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                </form>
+
+                <div class="d-flex align-items-center mt-2 mt-lg-0 gap-2">
+                    <a href="#" class="btn-custom-nav text-white text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        <i class="fa-solid fa-user"></i> Đăng nhập
+                    </a>
+                    <a href="../html/cart.html"
+                        class="btn-custom-nav text-white text-decoration-none position-relative">
+                        <span class="product-quantity"></span>
+                        <i class="fa-solid fa-cart-shopping me-1"></i> Giỏ hàng
+                    </a>
+                    <button class="btn btn-light rounded-pill btn-custom-nav text-dark" type="button"
+                        data-bs-toggle="modal" data-bs-target="#modalA">
+                        <i class="fa-solid fa-location-dot"></i> Hồ Chí Minh
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner đầu trang -->
+    <div class="bg-white py-5" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-custom">Chính Sách Bảo Hành</h1>
+                    <p class="lead">Cửa hàng Đom Đóm cam kết mang đến sự an tâm tuyệt đối với chính sách bảo hành ưu
+                        việt.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../img/logxl.png" alt="Bảo hành tủ lạnh" class="img-fluid rounded-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="container py-5">
+        <!-- Giới thiệu chung -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h2 class="card-title fw-bold text-custom mb-4">Cam Kết Chất Lượng</h2>
+                        <p class="card-text">Chúng tôi tự hào mang đến những sản phẩm tủ lạnh chất lượng cao từ các
+                            thương hiệu uy tín trên thị trường. Mỗi sản phẩm đều trải qua quá trình kiểm định nghiêm
+                            ngặt trước khi đến tay khách hàng, đảm bảo hiệu suất hoạt động tối ưu và độ bền cao.</p>
+                        <div class="alert alert-danger">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-triangle-exclamation fs-2 text-danger"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Lưu ý quan trọng:</h5>
+                                    <p class="mb-0">Quý khách vui lòng kiểm tra kỹ sản phẩm và đầy đủ phụ kiện kèm theo
+                                        trước khi ký nhận hàng. Các hư hỏng ngoại quan cần được báo ngay tại thời điểm
+                                        nhận hàng.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thời hạn và phạm vi bảo hành -->
+        <div class="row mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-header bg-custom text-white py-3">
+                        <h3 class="mb-0 fw-bold">Thời Hạn Bảo Hành</h3>
+                    </div>
+                    <div class="card-body p-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center py-3">
+                                <i class="fa-solid fa-check-circle me-3 fs-5" style="color: #ff0000;"></i>
+                                <div>
+                                    <strong>Máy nén:</strong> Bảo hành 24 tháng kể từ ngày mua hàng
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center py-3">
+                                <i class="fa-solid fa-check-circle me-3 fs-5" style="color: #ff0000;"></i>
+                                <div>
+                                    <strong>Bo mạch điện tử:</strong> Bảo hành 18 tháng kể từ ngày mua hàng
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center py-3">
+                                <i class="fa-solid fa-check-circle me-3 fs-5" style="color: #ff0000;"></i>
+                                <div>
+                                    <strong>Các linh kiện khác:</strong> Bảo hành 12 tháng kể từ ngày mua hàng
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center py-3">
+                                <i class="fa-solid fa-info-circle me-3 fs-5" style="color: #ff0000;"></i>
+                                <div>
+                                    <strong>Bảo hành có tính phí:</strong> Sau khi hết thời hạn bảo hành chính hãng
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-header bg-custom text-white py-3">
+                        <h3 class="mb-0 fw-bold">Phạm Vi Bảo Hành</h3>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-3">Bảo hành MIỄN PHÍ khi:</h5>
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="fa-solid fa-circle-check me-3 text-success"></i>
+                                <span>Sản phẩm còn trong thời hạn bảo hành</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="fa-solid fa-circle-check me-3 text-success"></i>
+                                <span>Lỗi do nhà sản xuất</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="fa-solid fa-circle-check me-3 text-success"></i>
+                                <span>Tem bảo hành và số seri sản phẩm còn nguyên vẹn</span>
+                            </li>
+                        </ul>
+
+                        <h5 class="fw-bold mb-3 mt-4">Không bảo hành khi:</h5>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="fa-solid fa-circle-xmark me-3 text-danger"></i>
+                                <span>Sản phẩm bị hỏng do thiên tai, hỏa hoạn</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="fa-solid fa-circle-xmark me-3 text-danger"></i>
+                                <span>Sản phẩm bị hư hỏng do sử dụng sai hướng dẫn</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="fa-solid fa-circle-xmark me-3 text-danger"></i>
+                                <span>Sản phẩm đã bị can thiệp, sửa chữa bởi đơn vị không được ủy quyền</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quy trình bảo hành -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-custom text-white py-3">
+                        <h3 class="mb-0 fw-bold">Quy Trình Bảo Hành</h3>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="row g-4">
+                            <div class="col-md-3 text-center">
+                                <div class="p-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="fa-solid fa-phone-volume fs-2" style="color: #ff0000;"></i>
+                                    </div>
+                                    <h5 class="fw-bold">Bước 1</h5>
+                                    <p>Liên hệ tổng đài <span class="fw-bold text-custom">1900 0091</span> hoặc tạo yêu
+                                        cầu trực tuyến</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="p-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="fa-solid fa-clipboard-check fs-2" style="color: #ff0000;"></i>
+                                    </div>
+                                    <h5 class="fw-bold">Bước 2</h5>
+                                    <p>Nhân viên kỹ thuật kiểm tra và xác nhận tình trạng sản phẩm</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="p-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="fa-solid fa-screwdriver-wrench fs-2" style="color: #ff0000;"></i>
+                                    </div>
+                                    <h5 class="fw-bold">Bước 3</h5>
+                                    <p>Tiến hành sửa chữa hoặc thay thế linh kiện cần thiết</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="p-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="fa-solid fa-check-double fs-2" style="color: #ff0000;"></i>
+                                    </div>
+                                    <h5 class="fw-bold">Bước 4</h5>
+                                    <p>Bàn giao sản phẩm và cập nhật thông tin bảo hành</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Các dịch vụ đặc biệt -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="fw-bold text-custom mb-4">Dịch Vụ Bảo Hành Đặc Biệt</h2>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-custom p-3 me-3">
+                                <i class="fa-solid fa-bolt text-white fs-5"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Bảo Hành Nhanh</h4>
+                        </div>
+                        <p class="card-text">Dịch vụ bảo hành nhanh trong vòng 24-48 giờ cho các lỗi nhỏ, giúp khách
+                            hàng hạn chế tối đa thời gian chờ đợi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-custom p-3 me-3">
+                                <i class="fa-solid fa-house-user text-white fs-5"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Bảo Hành Tại Nhà</h4>
+                        </div>
+                        <p class="card-text">Dịch vụ sửa chữa tận nơi cho các sản phẩm tủ lạnh lớn hoặc khó di chuyển,
+                            đảm bảo sự thuận tiện tối đa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-custom p-3 me-3">
+                                <i class="fa-solid fa-arrows-rotate text-white fs-5"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Đổi Sản Phẩm Mới</h4>
+                        </div>
+                        <p class="card-text">Cam kết đổi sản phẩm mới 100% nếu sản phẩm không thể sửa chữa được trong
+                            vòng 30 ngày đầu kể từ ngày mua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-custom p-3 me-3">
+                                <i class="fa-solid fa-calendar-check text-white fs-5"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Bảo Trì Định Kỳ</h4>
+                        </div>
+                        <p class="card-text">Dịch vụ kiểm tra và bảo dưỡng định kỳ 6 tháng/lần miễn phí trong 2 năm đầu
+                            giúp kéo dài tuổi thọ sản phẩm.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-custom p-3 me-3">
+                                <i class="fa-solid fa-shield text-white fs-5"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Bảo Hành Mở Rộng</h4>
+                        </div>
+                        <p class="card-text">Tùy chọn mua thêm gói bảo hành mở rộng lên đến 5 năm cho các sản phẩm cao
+                            cấp, đảm bảo sự an tâm lâu dài.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-custom p-3 me-3">
+                                <i class="fa-solid fa-headset text-white fs-5"></i>
+                            </div>
+                            <h4 class="fw-bold mb-0">Tư Vấn Kỹ Thuật</h4>
+                        </div>
+                        <p class="card-text">Đội ngũ kỹ thuật viên chuyên nghiệp sẵn sàng tư vấn và hướng dẫn khách hàng
+                            cách sử dụng sản phẩm hiệu quả nhất.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tra cứu thông tin bảo hành -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-5 bg-light">
+                        <h2 class="text-center fw-bold text-custom mb-4">Tra Cứu Thông Tin Bảo Hành</h2>
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="d-flex justify-content-center gap-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="searchType" id="phoneSearch"
+                                            checked>
+                                        <label class="form-check-label" for="phoneSearch">
+                                            Tra theo số điện thoại
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="searchType" id="imeiSearch">
+                                        <label class="form-check-label" for="imeiSearch">
+                                            Tra theo mã IMEI
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="searchType"
+                                            id="jobcardSearch">
+                                        <label class="form-check-label" for="jobcardSearch">
+                                            Tra theo mã jobcard
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control form-control-lg"
+                                        placeholder="Nhập thông tin tra cứu" aria-label="Thông tin tra cứu">
+                                    <button class="btn btn-custom btn-lg px-4" type="button">KIỂM TRA</button>
+                                </div>
+
+                                <div class="text-center">
+                                    <p class="mb-0">
+                                        Tổng đài hỗ trợ bảo hành (8:00 - 21:00): <span class="fw-bold text-custom">1900 000 123</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="fw-bold text-custom mb-4">Câu Hỏi Thường Gặp</h2>
+                <div class="accordion" id="accordionFAQ">
+                    <div class="accordion-item border mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Làm thế nào để kiểm tra thời hạn bảo hành của sản phẩm?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Quý khách có thể kiểm tra thời hạn bảo hành bằng cách:
+                                <ul class="mb-0 mt-2">
+                                    <li>Nhập số seri sản phẩm trên website chính thức của Cửa hàng Đom Đóm</li>
+                                    <li>Quét mã QR trên phiếu bảo hành đi kèm sản phẩm</li>
+                                    <li>Gọi đến tổng đài 1900 0091 để được hỗ trợ kiểm tra</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Tôi cần chuẩn bị những gì khi yêu cầu bảo hành?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Khi yêu cầu bảo hành, quý khách vui lòng chuẩn bị:
+                                <ul class="mb-0 mt-2">
+                                    <li>Phiếu bảo hành hoặc hóa đơn mua hàng</li>
+                                    <li>Sản phẩm có tem bảo hành và số seri còn nguyên vẹn</li>
+                                    <li>Mô tả chi tiết lỗi sản phẩm đang gặp phải</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Thời gian sửa chữa bảo hành thông thường là bao lâu?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                <p>Thời gian sửa chữa bảo hành tùy thuộc vào tình trạng sản phẩm:</p>
+                                <ul class="mb-0">
+                                    <li>Lỗi nhỏ: 24-48 giờ</li>
+                                    <li>Lỗi phức tạp: 3-5 ngày làm việc</li>
+                                    <li>Trường hợp cần đặt linh kiện: 7-10 ngày làm việc</li>
+                                </ul>
+                                <p class="mt-2 mb-0">Mọi trường hợp đều được thông báo rõ thời gian dự kiến cho khách
+                                    hàng.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Nếu tôi mua sản phẩm ở tỉnh này nhưng cần bảo hành ở tỉnh khác thì sao?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Cửa hàng Đom Đóm áp dụng chính sách bảo hành xuyên quốc gia. Quý khách có thể mang sản
+                                phẩm đến bất kỳ trung tâm bảo hành chính hãng nào của chúng tôi trên toàn quốc để được
+                                hỗ trợ. Chính sách và quy trình bảo hành được áp dụng thống nhất, không phụ thuộc vào
+                                địa điểm mua hàng ban đầu.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to action -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card bg-custom text-white border-0 shadow">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 mb-4 mb-lg-0">
+                                <h3 class="fw-bold mb-3">Cần hỗ trợ thêm về chính sách bảo hành?</h3>
+                                <p class="mb-0">Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng giải đáp mọi thắc mắc của quý
+                                    khách. Hãy liên hệ ngay để được tư vấn!</p>
+                            </div>
+                            <div class="col-lg-4 text-lg-end">
+                                <a href="../html/contact.html" class="btn btn-light btn-lg px-4 rounded-pill">
+                                    <i class="fa-solid fa-headset me-2"></i> Liên hệ hỗ trợ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+      <!-- Footer -->
+      <div class="container-fluid py-5 mt-4" style="background-color: #ffffff; border-radius: 10px;">
+        <div class="container">
+            <footer class="pt-5 pb-3">
+                <div class="row gy-5">
+                    <!-- Tổng đài hỗ trợ -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-5">
+                        <h5 class="fw-bold mb-4 fs-4">Tổng đài hỗ trợ</h5>
+                        <ul class="nav flex-column gap-3">
+                            <li class="nav-item mb-3 d-flex align-items-center">
+                                <i class="fa-solid fa-phone me-3 fs-5" style="color: #ff0000;"></i>
+                                <span>Mua hàng: <span class="text-custom fw-bold ms-2">1900 0091</span></span>
+                            </li>
+                            <li class="nav-item mb-3 d-flex align-items-center">
+                                <i class="fa-solid fa-headset me-3 fs-5" style="color: #ff0000;"></i>
+                                <span>CSKH: <span class="text-custom fw-bold ms-2">1900 0091</span></span>
+                            </li>
+                            <li class="nav-item mb-3 d-flex align-items-center">
+                                <i class="fa-solid fa-comment-dots me-3 fs-5" style="color: #ff0000;"></i>
+                                <span>Khiếu nại: <span class="text-custom fw-bold ms-2">1900 0091</span></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Về chúng tôi -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-5">
+                        <h5 class="fw-bold mb-4 fs-4">Về chúng tôi</h5>
+                        <ul class="nav flex-column gap-3">
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-circle-info me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Giới thiệu</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-users me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Tuyển dụng</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-newspaper me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Tin tức</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Chính sách -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-5">
+                        <h5 class="fw-bold mb-4 fs-4">Chính sách</h5>
+                        <ul class="nav flex-column gap-3">
+                            <li class="nav-item mb-3">
+                                <a href="../html/guarantee.html"
+                                    class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-shield me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Chính sách bảo hành</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-rotate me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Chính sách đổi trả</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-lock me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Chính sách bảo mật</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-file-contract me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Điều khoản sử dụng</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Địa chỉ -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-5">
+                        <h5 class="fw-bold mb-4 fs-4">Địa chỉ cửa hàng</h5>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fa-solid fa-location-dot me-3 fs-5 mt-1" style="color: #ff0000;"></i>
+                            <p class="text-muted mb-0 fs-6">
+                                12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. Hồ Chí Minh
+                            </p>
+                        </div>
+                        <div class="map-container rounded overflow-hidden">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8288785454373!2d106.68441221533564!3d10.822158661318918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528da1c7b25bb%3A0xe43e5bc63b66f7f4!2zVHJ1bmcgxJDhuqFpIGjhu41jIEPDtG5nIE5naGnhu4dwIFRIUC5IQ00!5e0!3m2!1svi!2s!4v1615381574143!5m2!1svi!2s"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="row py-4 border-top">
+                        <div class="col-md-6 mb-3">
+                            <h5>Cổng thanh toán</h5>
+                            <div class="d-flex flex-wrap align-items-center gap-4">
+                                <img src="../img/visa.png" alt="Visa" height="30">
+                                <img src="../img/mtc.png" alt="MasterCard" height="40">
+                                <img src="../img/momo.png" alt="Momo" height="40">
+                                <img src="../img/zalopay.png" alt="ZaloPay" height="40">
+                                <img src="../img/paypal.png" alt="PayPal" height="40">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <h5>Đơn vị vận chuyển</h5>
+                            <div class="d-flex flex-wrap align-items-center gap-5">
+                                <img src="../img/ghn.png" alt="GHN" height="40">
+                                <img src="../img/ghtk.png" alt="GHTK" height="40">
+                                <img src="../img/vtp.png" alt="Viettel Post" height="40">
+                                <img src="../img/vnpost.jpg" alt="VNPost" height="40">
+                                <img src="../img/jt.png" alt="J&T Express" height="40">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dòng cuối -->
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                        <p>&copy; 2025 FIT, IUH. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <div id="chatbot-button"
+        class="position-fixed bottom-0 end-0 m-4 rounded-circle shadow d-flex flex-column align-items-center justify-content-center bg-white"
+        style="width: 70px; height: 70px; z-index: 1050; cursor: pointer;">
+        <img src="../img/chatbot.png" alt="Chatbot" width="40" height="40">
+        <small class="text-primary">Trợ lý</small>
+    </div>
+
+    <div id="chatbot-box" class="card position-fixed bottom-0 end-0 m-4 shadow"
+        style="width: 20em; height: 30em; z-index: 1050; display: none;">
+        <div class="card-header bg-custom text-white d-flex justify-content-between align-items-center">
+            <span><i class="fa-solid fa-robot me-2"></i>Trợ lí ảo</span>
+            <button id="close-chat" class="btn-close btn-close-white"></button>
+        </div>
+
+        <div class="card-body d-flex flex-column justify-content-between p-2">
+            <div id="chat-content" class="mb-2 overflow-auto" style="height: 21em;">
+                <div class="mb-2">
+                    <div class="d-flex align-items-start">
+                        <img src="../img/chatbot.png" width="30" class="rounded-circle me-2"
+                            style="background-color: #e0e0e0;">
+                        <div class="bg-light rounded px-3 py-2">
+                            <p class="mb-0">Xin chào Anh/Chị! Em là trợ lý ảo của shop.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="d-flex align-items-start">
+                        <img src="../img/chatbot.png" width="30" class="rounded-circle me-2"
+                            style="background-color: #e0e0e0;">
+                        <div class="bg-light rounded px-3 py-2">
+                            <p class="mb-0">Em rất sẵn lòng hỗ trợ Anh/Chị 😊</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column mt-3">
+                    <button class="btn btn-outline-custom btn-sm mb-2 text-start">Top 5 máy lạnh bán chạy</button>
+                    <button class="btn btn-outline-custom btn-sm text-start">Danh sách tivi được ưa chuộng
+                        nhất</button>
+                </div>
+            </div>
+
+            <div class="d-flex border-top pt-2">
+                <input type="text" id="message" class="form-control rounded-start-pill border-0"
+                    placeholder="Nhập tin nhắn...">
+                <button class="btn btn-outline-secondary rounded-end-pill border-0">
+                    <i class="fa-solid fa-paper-plane text-primary"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalA" tabindex="-1" aria-labelledby="modalALabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom" id="modalALabel">Chọn địa điểm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">                   
+                        <div class="col-12">
+                            <h6 class="mb-2">Địa điểm cửa hàng</h6>
+                            <div class="location-buttons">
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option" data-location="Hồ Chí Minh">
+                                    Hồ Chí Minh
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option" data-location="Hà Nội">
+                                    Hà Nội
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option" data-location="Đà Nẵng">
+                                    Đà Nẵng
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option" data-location="Cần Thơ">
+                                    Cần Thơ
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option" data-location="Nha Trang">
+                                    Nha Trang
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option" data-location="Đà Lạt">
+                                    Đà Lạt
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option" data-location="Huế">
+                                    Huế
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option" data-location="Hải Phòng">
+                                    Hải Phòng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-custom w-100 text-center" id="loginModalLabel">Đăng nhập</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm" onsubmit="return validateLogin()">
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text rounded-start-pill bg-light  ">
+                                    <i class="fa-solid fa-user text-custom"></i>
+                                </span>
+                                <input type="tel" class="form-control ps-3 input-focus" style="border-top-right-radius: 1.2em; border-bottom-right-radius: 1.2em;"
+                                    id="phone-login" placeholder="Số điện thoại" required>
+                            </div>
+                            <span class="valid valid-phone-login"></span>
+
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text rounded-start-pill bg-light">
+                                    <i class="fa-solid fa-lock" style="color: #ff0000;"></i>
+                                </span>
+                                <input type="password" class="form-control border-end-0 ps-3  input-focus"
+                                    id="password-login" placeholder="Nhập mật khẩu" required>
+                                <span class="input-group-text bg-light rounded-end-pill toggle-password custom-nav-eye  "
+                                    style="cursor: pointer;">
+                                    <i class="fa-solid fa-eye-slash text-custom"></i>
+                                </span>
+                            </div>
+                            <span class="valid valid-pass-login"></span>
+                        </div>
+
+                        <button type="submit" id="login-btn" class="btn  btn-custom w-100 rounded-pill">
+                            <i class="fa-solid fa-user me-2"></i> Đăng nhập
+                        </button>
+                    </form>
+                    <!-- Phần "Hoặc tiếp tục với" -->
+                    <div class="text-center mt-3">
+                        <p class="text-muted">Hoặc tiếp tục với</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#"
+                                class="btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                            <a href="#"
+                                class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <p>Chưa có tài khoản? <a href="../html/register.html" class="text-custom">Đăng ký ngay</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script src="../js/login.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchTypes = document.querySelectorAll('input[name="searchType"]');
+        const searchInput = document.querySelector('.input-group input');
+        
+        searchTypes.forEach(type => {
+            type.addEventListener('change', function() {
+                if (this.id === 'phoneSearch') {
+                    searchInput.placeholder = 'Nhập số điện thoại';
+                    searchInput.type = 'tel';
+                } else if (this.id === 'imeiSearch') {
+                    searchInput.placeholder = 'Nhập mã IMEI';
+                    searchInput.type = 'text';
+                } else if (this.id === 'jobcardSearch') {
+                    searchInput.placeholder = 'Nhập mã jobcard';
+                    searchInput.type = 'text';
+                }
+            });
+        });
+        
+        searchInput.placeholder = 'Nhập số điện thoại';
+        searchInput.type = 'tel';
+    });
+</script>
+</body>
+
+</html>
