@@ -43,7 +43,6 @@ function checkFormValid() {
       "Tên phải có ít nhất 2 từ, viết hoa chữ cái đầu"
     );
 
-  // Kiểm tra xác nhận mật khẩu khi gõ
   confirmPassword.oninput = () =>
     isPasswordMatch(
       password,
@@ -121,9 +120,33 @@ function checkFormValid() {
       if (!isTerms(terms, document.querySelector(".valid-terms")))
         isFormValid = false;
 
+      const userData = JSON.parse(localStorage.getItem("users")) || [];
+
+      const user = {
+        phone: phone.value.trim(),
+        password: password.value.trim(),
+      };
+
+      console.log(typeof userData);
+
+      const isUserExists = userData.some((user) => user.phone === phone.value);
+      if (isUserExists) {
+        document.querySelector(".valid-phone").innerHTML =
+          "Số điện thoại đã tồn tại, vui lòng nhập số khác";
+        isFormValid = false;
+      } else {
+        document.querySelector(".valid-phone").innerHTML = "";
+      }
+
       if (isFormValid) {
         showSuccessModal("🎉 Đăng ký thành công!");
+        const user = {
+          phone: phone.value.trim(),
+          password: password.value.trim(),
+        };
       }
+      userData.push(user);
+      localStorage.setItem("users", JSON.stringify(userData));
     });
 
   function isValid(elem, valid, pattern, message) {
@@ -281,9 +304,11 @@ function togglePassword(fieldId, iconSpan) {
 }
 
 function showSuccessModal(message) {
-  const modalBody = document.querySelector('#successModal .modal-body');
+  const modalBody = document.querySelector("#successModal .modal-body");
   modalBody.textContent = message;
 
-  const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+  const successModal = new bootstrap.Modal(
+    document.getElementById("successModal")
+  );
   successModal.show();
 }

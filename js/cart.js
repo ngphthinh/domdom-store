@@ -24,6 +24,8 @@ function setQuantityCarts() {
   const carts = JSON.parse(localStorage.getItem("carts")) || [];
   const cartCount = document.querySelector(".product-quantity");
 
+  if (!cartCount) return; // Check if cartCount element exists
+
   // when there are no carts, hide the cart count
   if (carts.length === 0) {
     cartCount.style.display = "none";

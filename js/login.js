@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setupLoginEventHandlers();
   setUpChatbot();
   setupLocationHandler();
-
+  handleSearch();
   setQuantityCarts();
 });
 
@@ -165,4 +165,108 @@ function setupLocationHandler() {
         }
       });
     });
+}
+
+function handleSearch() {
+  const searchInput = document.querySelector(
+    ".input-group input[type='search']"
+  );
+
+  let searchResultsContainer = document.querySelector(
+    ".search-results-container"
+  );
+  if (!searchResultsContainer) {
+    searchResultsContainer = document.createElement("div");
+    searchResultsContainer.className =
+      "search-results-container position-absolute bg-white w-100 shadow-sm rounded mt-5 z-3";
+    searchResultsContainer.style.display = "none";
+    searchResultsContainer.style.maxHeight = "400px";
+    searchResultsContainer.style.overflowY = "auto";
+    searchResultsContainer.style.zIndex = "1000";
+
+    const inputGroup = document.querySelector(".input-group");
+    inputGroup.parentNode.style.position = "relative";
+    inputGroup.parentNode.appendChild(searchResultsContainer);
+  }
+
+  searchInput.addEventListener("input", function (event) {
+    const searchTerm = event.target.value.trim().toLowerCase();
+
+    let products = JSON.parse(localStorage.getItem("data")) || [];
+
+    searchResultsContainer.innerHTML = "";
+
+    if (searchTerm === "") {
+      searchResultsContainer.style.display = "none";
+      return;
+    }
+
+    const filteredProducts = products.filter(
+      (product) =>
+        product.name?.toLowerCase().includes(searchTerm) ||
+        product.brand?.toLowerCase().includes(searchTerm)
+    );
+
+    console.log("Filtered products:", filteredProducts.length);
+    searchResultsContainer.style.display = "block";
+
+    if (filteredProducts.length === 0) {
+      searchResultsContainer.innerHTML = `
+        <div class="p-3 text-center text-muted">
+          <i class="fa-solid fa-magnifying-glass-minus mb-2"></i>
+          <p class="mb-0">Không tìm thấy sản phẩm nào phù hợp</p>
+        </div>
+      `;
+      return;
+    }
+
+    filteredProducts.forEach((product) => {
+      const resultItem = document.createElement("a");
+
+      // range: 0 - 8
+      let range = Math.floor(Math.random() * 9);
+
+      resultItem.href = `../html/productDetails${range}.html`;
+      resultItem.className = "text-decoration-none text-dark";
+
+      const imgPath = product.img.replace("./", "../");
+
+      resultItem.innerHTML = `
+        <div class="d-flex align-items-center p-2 border-bottom hover-bg">
+          <div class="me-3" style="width: 60px; height: 60px;">
+            <img src="${imgPath}" alt="${product.name}" class="img-fluid" 
+                 onerror="this.src='../img/products/product-placeholder.png'">
+          </div>
+          <div>
+            <div class="fw-medium">${highlightSearchTerm(
+              product.name,
+              searchTerm
+            )}</div>
+            <div class="text-danger">${product.price.toLocaleString()}₫</div>
+          </div>
+        </div>
+      `;
+
+      searchResultsContainer.appendChild(resultItem);
+    });
+  });
+
+  document.addEventListener("click", function (e) {
+    if (
+      !e.target.closest(".input-group") &&
+      !e.target.closest(".search-results-container")
+    ) {
+      searchResultsContainer.style.display = "none";
+    }
+  });
+
+  function highlightSearchTerm(text, searchTerm) {
+    if (!text) return "";
+    const regex = new RegExp(`(${searchTerm})`, "gi");
+    return text.replace(regex, '<span class="bg-warning">$1</span>');
+  }
+
+  const style = document.createElement("style");
+  style.textContent = `.hover-bg:hover { background-color: #f8f9fa; }`;
+  document.head.appendChild(style);
 }

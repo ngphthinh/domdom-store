@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - Đom Đóm Store</title>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/conf.css">
+
+    <style>
+        .timeline-card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-card:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (min-width: 992px) {
+            .timeline::before {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                background-color: var(--bs-custom);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .team-card {
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card {
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .timeline-card {
+                margin-left: 15px !important;
+                margin-right: 15px !important;
+            }
+        }
+
+        .partner-logo {
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        .partner-logo:hover {
+            transform: translateY(-5px);
+        }
+
+        .cert-card {
+            transition: all 0.3s ease;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <img src="../img/logo.png" alt="Đom Đóm Icon" width="50" class="rounded">
+                <div class="d-flex flex-column lh-sm">
+                    <span class="fw-bold fs-5">Đom đóm</span>
+                    <small class="text-light" style="font-size: 0.4em;">
+                        "Nhỏ bé như ánh sao,<br> mát lành như vũ trụ"
+                    </small>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/guarantee.html">Bảo hành</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/contact.html">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/about.html">Giới thiệu</a></li>
+                </ul>
+
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex mx-3 flex-grow-1" role="search">
+                    <div class="input-group">
+                        <input class="form-control rounded-start-pill input-focus" type="search"
+                            placeholder="Bạn tìm gì..." aria-label="Search">
+                        <span class="input-group-text bg-white border-0 rounded-end-pill">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                </form>
+
+                <div class="d-flex align-items-center mt-2 mt-lg-0 gap-2">
+                    <a href="#" class="btn-custom-nav text-white text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        <i class="fa-solid fa-user"></i> Đăng nhập
+                    </a>
+                    <a href="../html/cart.html"
+                        class="btn-custom-nav text-white text-decoration-none position-relative">
+                        <span class="product-quantity"></span>
+                        <i class="fa-solid fa-cart-shopping me-1"></i> Giỏ hàng
+                    </a>
+                    <button class="btn btn-light rounded-pill btn-custom-nav text-dark" type="button"
+                        data-bs-toggle="modal" data-bs-target="#modalA">
+                        <i class="fa-solid fa-location-dot"></i> Hồ Chí Minh
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container py-5">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="text-center text-custom mb-4">Về Đom Đóm Store</h1>
+                <div class="text-center mb-4">
+                    <img src="../img/logo.png" alt="Đom Đóm Store Logo" class="img-fluid" style="max-width: 200px;">
+                </div>
+                <p class="lead">
+                    Đom Đóm Store là cửa hàng chuyên phân phối các sản phẩm điện lạnh chất lượng cao, với phương châm
+                    "Nhỏ bé như ánh sao, mát lành như vũ trụ", chúng tôi cam kết mang đến những sản phẩm tủ lạnh
+                    và thiết bị điện lạnh chất lượng hàng đầu đến với mọi gia đình Việt.
+                </p>
+                <p>
+                    Được thành lập vào năm 2022, Đom Đóm Store đã nhanh chóng trở thành đối tác tin cậy của nhiều
+                    thương hiệu điện lạnh nổi tiếng như Samsung, LG, Toshiba, Panasonic, Sharp và nhiều thương hiệu
+                    khác.
+                    Chúng tôi tự hào là đơn vị phân phối sản phẩm chính hãng với mức giá cạnh tranh nhất thị trường.
+                </p>
+                <p>
+                    Tại Đom Đóm Store, chúng tôi không chỉ bán sản phẩm mà còn mang đến trải nghiệm mua sắm tuyệt vời
+                    cùng các dịch vụ hỗ trợ chuyên nghiệp như tư vấn sản phẩm, lắp đặt tận nhà, bảo hành chính hãng
+                    và hỗ trợ kỹ thuật 24/7.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center text-custom mb-4">Chuyên gia về tủ lạnh</h2>
+                <p class="text-center mb-5">Đom Đóm Store tự hào là đơn vị chuyên phân phối các dòng tủ lạnh cao cấp từ
+                    các thương hiệu hàng đầu</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card h-100 text-center shadow-sm border-0">
+                            <div class="card-body p-3">
+                                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="fa-solid fa-snowflake fs-1" style="color: #ff0000;"></i>
+                                </div>
+                                <h4 class="card-title">Tủ lạnh Side by Side</h4>
+                                <p class="card-text">Tủ lạnh 2 cánh với dung tích lớn, thiết kế hiện đại phù hợp cho gia
+                                    đình đông người.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card h-100 text-center shadow-sm border-0">
+                            <div class="card-body p-3">
+                                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="fa-solid fa-temperature-low fs-1" style="color: #ff0000;"></i>
+                                </div>
+                                <h4 class="card-title">Tủ lạnh Multi Door</h4>
+                                <p class="card-text">Tủ lạnh nhiều ngăn với công nghệ bảo quản thực phẩm tiên tiến, tiết
+                                    kiệm điện năng.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card h-100 text-center shadow-sm border-0">
+                            <div class="card-body p-3">
+                                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="fa-solid fa-cube fs-1" style="color: #ff0000;"></i>
+                                </div>
+                                <h4 class="card-title">Tủ lạnh Mini</h4>
+                                <p class="card-text">Tủ lạnh nhỏ gọn, phù hợp cho phòng ngủ, văn phòng hoặc căn hộ diện
+                                    tích nhỏ.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card h-100 text-center shadow-sm border-0">
+                            <div class="card-body p-3">
+                                <div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto mb-3"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="fa-solid fa-microchip fs-1" style="color: #ff0000;"></i>
+                                </div>
+                                <h4 class="card-title">Tủ lạnh Inverter</h4>
+                                <p class="card-text">Tủ lạnh công nghệ Inverter hiện đại với khả năng tiết kiệm điện
+                                    năng vượt trội.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="text-center text-custom mb-5">Hành trình phát triển</h2>
+                <div class="timeline">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="timeline-card bg-light p-4 rounded shadow-sm mb-4 me-lg-4 position-relative">
+                                <h4 class="mb-3">2022</h4>
+                                <p>Thành lập cửa hàng đầu tiên tại Quận Gò Vấp, TP. HCM với diện tích khiêm tốn 80m²,
+                                    chuyên phân phối các sản phẩm tủ lạnh và điều hòa.</p>
+                                <span class="badge bg-custom position-absolute top-0 end-0 mt-2 me-2">Khởi đầu</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div
+                                class="timeline-card bg-light p-4 rounded shadow-sm mb-4 ms-lg-4 mt-lg-5 position-relative">
+                                <h4 class="mb-3">2023</h4>
+                                <p>Mở rộng danh mục sản phẩm, bao gồm thêm TV, máy giặt và các thiết bị gia dụng. Trở
+                                    thành đối tác chính thức của Samsung và LG.</p>
+                                <span class="badge bg-custom position-absolute top-0 end-0 mt-2 me-2">Phát triển</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="timeline-card bg-light p-4 rounded shadow-sm mb-4 me-lg-4 position-relative">
+                                <h4 class="mb-3">2024</h4>
+                                <p>Mở thêm chi nhánh thứ hai tại Quận 2, TP. HCM với diện tích 200m². Ra mắt website bán
+                                    hàng trực tuyến và ứng dụng di động.</p>
+                                <span class="badge bg-custom position-absolute top-0 end-0 mt-2 me-2">Mở rộng</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div
+                                class="timeline-card bg-light p-4 rounded shadow-sm mb-4 ms-lg-4 mt-lg-5 position-relative">
+                                <h4 class="mb-3">2025</h4>
+                                <p>Dự kiến mở thêm chi nhánh tại Hà Nội và Đà Nẵng, mục tiêu trở thành một trong những
+                                    chuỗi cửa hàng điện máy hàng đầu Việt Nam.</p>
+                                <span class="badge bg-custom position-absolute top-0 end-0 mt-2 me-2">Tương lai</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center text-custom mb-5">Khách hàng nói gì về chúng tôi</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="d-flex mb-3">
+                                    <div class="text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text fst-italic">
+                                    "Tôi rất hài lòng với chiếc tủ lạnh Samsung mua tại Đom Đóm. Nhân viên tư vấn rất
+                                    nhiệt tình,
+                                    sản phẩm chất lượng và dịch vụ giao hàng nhanh chóng."
+                                </p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px;">
+                                        <i class="fa-solid fa-user text-custom"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">Nguyễn Văn Minh</h5>
+                                        <small class="text-muted">Khách hàng tại TP. HCM</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="d-flex mb-3">
+                                    <div class="text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text fst-italic">
+                                    "Giá cả hợp lý, sản phẩm đúng như mô tả. Đặc biệt, dịch vụ bảo hành rất chu đáo.
+                                    Khi máy lạnh của tôi gặp vấn đề, nhân viên kỹ thuật đến xử lý ngay trong ngày."
+                                </p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px;">
+                                        <i class="fa-solid fa-user text-custom"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">Trần Thị Hương</h5>
+                                        <small class="text-muted">Khách hàng tại TP. HCM</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="d-flex mb-3">
+                                    <div class="text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text fst-italic">
+                                    "Chương trình khuyến mãi hấp dẫn, được tặng nhiều phụ kiện khi mua TV.
+                                    Nhân viên thân thiện, am hiểu sản phẩm và giải đáp mọi thắc mắc của tôi rất rõ
+                                    ràng."
+                                </p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px;">
+                                        <i class="fa-solid fa-user text-custom"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">Lê Văn Phúc</h5>
+                                        <small class="text-muted">Khách hàng tại TP. HCM</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center text-custom mb-4">Hệ thống cửa hàng</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-3">
+                                    <i class="fa-solid fa-store me-2" style="color: #ff0000;"></i> Chi nhánh Gò Vấp
+                                </h4>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-location-dot me-2"></i> 12 Nguyễn Văn Bảo, Phường 4, Quận Gò
+                                    Vấp, TP. HCM
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-phone me-2"></i> 028.3894.5678
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock me-2"></i> 8:00 - 21:00 (Tất cả các ngày trong tuần)
+                                </p>
+                                <a href="https://maps.google.com" class="btn btn-outline-custom">Xem bản đồ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body p-4">
+                                <h4 class="card-title mb-3">
+                                    <i class="fa-solid fa-store me-2" style="color: #ff0000;"></i> Chi nhánh Thủ Đức
+                                </h4>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-location-dot me-2"></i> 89 Võ Văn Ngân, Phường Linh Chiểu, TP.
+                                    Thủ Đức, TP. HCM
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-phone me-2"></i> 028.3724.9301
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock me-2"></i> 8:00 - 21:00 (Tất cả các ngày trong tuần)
+                                </p>
+                                <a href="https://maps.google.com" class="btn btn-outline-custom">Xem bản đồ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="text-center text-custom mb-5">Đối tác & Chứng nhận</h2>
+                <h4 class="text-center mb-4">Đối tác chính thức</h4>
+                <div class="row justify-content-center align-items-center mb-5">
+                    <div class="col-4 col-md-2 text-center mb-4">
+                        <a href="https://www.samsung.com/vn/refrigerators/" target="_blank"
+                            class="d-block partner-logo">
+                            <img src="../img/images.png" alt="Samsung" class="img-fluid"
+                                style="max-height: 50px;">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 text-center mb-4">
+                        <a href="https://www.lg.com/vn/tu-lanh" target="_blank" class="d-block partner-logo">
+                            <img src="../img/lglogo.svg" alt="LG" class="img-fluid" style="max-height: 50px;">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 text-center mb-4">
+                        <a href="https://www.panasonic.com/vn/consumer/home-appliances/refrigerators.html"
+                            target="_blank" class="d-block partner-logo">
+                            <img src="../img/pana.png" alt="Panasonic" class="img-fluid"
+                                style="max-height: 70px;">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 text-center mb-4">
+                        <a href="https://www.toshiba.com/tai/" target="_blank"
+                            class="d-block partner-logo">
+                            <img src="../img/toshiba.gif" alt="Toshiba" class="img-fluid"
+                                style="max-height: 50px;">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 text-center mb-4">
+                        <a href="https://vn.sharp/tu-lanh" target="_blank" class="d-block partner-logo">
+                            <img src="../img/sharp.png" alt="Sharp" class="img-fluid"
+                                style="max-height: 50px;">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 text-center mb-4">
+                        <a href="https://www.electrolux.vn/tu-lanh/" target="_blank" class="d-block partner-logo">
+                            <img src="../img/electrolux_logo_sg.svg" alt="Electrolux" class="img-fluid"
+                                style="max-height: 50px;">
+                        </a>
+                    </div>
+                </div>
+
+                <h4 class="text-center mb-4">Chứng nhận</h4>
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div
+                            class="bg-light p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center cert-card">
+                           
+                            <i id="cert-icon-1" class="fa-solid fa-certificate fs-1 mb-3" style="color: #ff0000;"></i>
+                            <h5>Đại lý ủy quyền</h5>
+                            <p class="small mb-0">Chứng nhận đại lý ủy quyền chính thức từ nhiều thương hiệu hàng đầu
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div
+                            class="bg-light p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center cert-card">
+                            <i id="cert-icon-2" class="fa-solid fa-award fs-1 mb-3" style="color: #ff0000;"></i>
+                            <h5>Cửa hàng tiêu biểu</h5>
+                            <p class="small mb-0">Top 10 cửa hàng điện máy uy tín TP. HCM năm 2023</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div
+                            class="bg-light p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center cert-card">
+                
+                            <i id="cert-icon-3" class="fa-solid fa-star fs-1 mb-3" style="color: #ff0000;"></i>
+                            <h5>Dịch vụ 5 sao</h5>
+                            <p class="small mb-0">Chứng nhận dịch vụ khách hàng xuất sắc từ Hiệp hội Bán lẻ Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div
+                            class="bg-light p-3 rounded shadow-sm h-100 d-flex flex-column align-items-center justify-content-center cert-card">
+                            <i id="cert-icon-4" class="fa-solid fa-shield-halved fs-1 mb-3" 
+                                style="color: #ff0000;"></i>
+                            <h5>Bảo hành tốt nhất</h5>
+                            <p class="small mb-0">Giải thưởng dịch vụ bảo hành và hậu mãi xuất sắc năm 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center text-custom mb-4">Tầm nhìn & Sứ mệnh</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-center mb-3">
+                                    <i class="fa-solid fa-eye mb-3 fs-1" style="color: #ff0000;"></i>
+                                    <div>Tầm nhìn</div>
+                                </h3>
+                                <p class="card-text">
+                                    Trở thành chuỗi cửa hàng điện lạnh hàng đầu Việt Nam, mang đến cho khách hàng
+                                    những sản phẩm chất lượng với dịch vụ tận tâm và chuyên nghiệp nhất.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body p-4">
+                                <h3 class="card-title text-center mb-3">
+                                    <i class="fa-solid fa-bullseye mb-3 fs-1" style="color: #ff0000;"></i>
+                                    <div>Sứ mệnh</div>
+                                </h3>
+                                <p class="card-text">
+                                    Mang đến những giải pháp điện lạnh tối ưu nhất cho mỗi gia đình Việt, giúp cuộc sống
+                                    trở nên tiện nghi hơn với chi phí hợp lý và dịch vụ chăm sóc khách hàng xuất sắc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center text-custom mb-5">Đội ngũ của chúng tôi</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-5 mb-4">
+                        <div class="card shadow team-card h-100">
+                            <div class="card-body text-center p-4">
+                                <h3 class="card-title h4">Nguyễn Văn A</h3>
+                                <p class="text-custom fw-bold">MSSV: 23642651</p>
+                                <p class="card-text">
+                                    Với hơn 10 năm kinh nghiệm trong lĩnh vực điện lạnh, anh Nguyễn Văn A đã xây dựng
+                                    Đom Đóm Store từ một cửa hàng nhỏ trở thành hệ thống phân phối điện lạnh uy tín.
+                                    Anh luôn tận tâm theo đuổi triết lý kinh doanh "Chất lượng là danh dự".
+                                </p>
+                                <div class="social-links mt-4">
+                                    <a href="#" class="me-2 text-dark"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="#" class="text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mb-4">
+                        <div class="card shadow team-card h-100">
+                            <div class="card-body text-center p-4">
+                                <h3 class="card-title h4">Trần Thị B</h3>
+                                <p class="text-custom fw-bold">MSSV: 23658881</p>
+                                <p class="card-text">
+                                    Tạo trang sản phẩm, tạo form đăng nhập, đăng kí, các trang blog, viết báo cáo, lên ý tưởng trang chủ
+                                </p>
+                                <div class="social-links mt-4">
+                                    <a href="#" class="me-2 text-dark"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="#" class="text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center text-custom mb-4">Giá trị cốt lõi</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-medal fs-1 mb-3"  style="color: #ff0000;"></i>
+                            <h4>Chất lượng</h4>
+                            <p>Cam kết cung cấp sản phẩm chính hãng, chất lượng cao.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-handshake text-custom fs-1 mb-3"></i>
+                            <h4>Tận tâm</h4>
+                            <p>Luôn đặt khách hàng làm trung tâm trong mọi hoạt động.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-lightbulb text-custom fs-1 mb-3"></i>
+                            <h4>Đổi mới</h4>
+                            <p>Không ngừng cải tiến để mang đến trải nghiệm tốt nhất.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+       <!-- Footer -->
+       <div class="container-fluid py-5 mt-4" style="background-color: #ffffff; border-radius: 10px;">
+        <div class="container">
+            <footer class="pt-5 pb-3">
+                <div class="row gy-5">
+                    <!-- Tổng đài hỗ trợ -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-5">
+                        <h5 class="fw-bold mb-4 fs-4">Tổng đài hỗ trợ</h5>
+                        <ul class="nav flex-column gap-3">
+                            <li class="nav-item mb-3 d-flex align-items-center">
+                                <i class="fa-solid fa-phone me-3 fs-5" style="color: #ff0000;"></i>
+                                <span>Mua hàng: <span class="text-custom fw-bold ms-2">1900 0091</span></span>
+                            </li>
+                            <li class="nav-item mb-3 d-flex align-items-center">
+                                <i class="fa-solid fa-headset me-3 fs-5" style="color: #ff0000;"></i>
+                                <span>CSKH: <span class="text-custom fw-bold ms-2">1900 0091</span></span>
+                            </li>
+                            <li class="nav-item mb-3 d-flex align-items-center">
+                                <i class="fa-solid fa-comment-dots me-3 fs-5" style="color: #ff0000;"></i>
+                                <span>Khiếu nại: <span class="text-custom fw-bold ms-2">1900 0091</span></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Về chúng tôi -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-5">
+                        <h5 class="fw-bold mb-4 fs-4">Về chúng tôi</h5>
+                        <ul class="nav flex-column gap-3">
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-circle-info me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Giới thiệu</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-users me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Tuyển dụng</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-newspaper me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Tin tức</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Chính sách -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-5">
+                        <h5 class="fw-bold mb-4 fs-4">Chính sách</h5>
+                        <ul class="nav flex-column gap-3">
+                            <li class="nav-item mb-3">
+                                <a href="../html/guarantee.html"
+                                    class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-shield me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Chính sách bảo hành</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-rotate me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Chính sách đổi trả</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-lock me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Chính sách bảo mật</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="#" class="nav-link p-0 text-muted d-flex align-items-center hover-custom">
+                                    <i class="fa-solid fa-file-contract me-3 fs-5" style="color: #ff0000;"></i>
+                                    <span>Điều khoản sử dụng</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Địa chỉ -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-5">
+                        <h5 class="fw-bold mb-4 fs-4">Địa chỉ cửa hàng</h5>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fa-solid fa-location-dot me-3 fs-5 mt-1" style="color: #ff0000;"></i>
+                            <p class="text-muted mb-0 fs-6">
+                                12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP. Hồ Chí Minh
+                            </p>
+                        </div>
+                        <div class="map-container rounded overflow-hidden">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8288785454373!2d106.68441221533564!3d10.822158661318918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528da1c7b25bb%3A0xe43e5bc63b66f7f4!2zVHJ1bmcgxJDhuqFpIGjhu41jIEPDtG5nIE5naGnhu4dwIFRIUC5IQ00!5e0!3m2!1svi!2s!4v1615381574143!5m2!1svi!2s"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="row py-4 border-top">
+                        <div class="col-md-6 mb-3">
+                            <h5>Cổng thanh toán</h5>
+                            <div class="d-flex flex-wrap align-items-center gap-4">
+                                <img src="../img/visa.png" alt="Visa" height="30">
+                                <img src="../img/mtc.png" alt="MasterCard" height="40">
+                                <img src="../img/momo.png" alt="Momo" height="40">
+                                <img src="../img/zalopay.png" alt="ZaloPay" height="40">
+                                <img src="../img/paypal.png" alt="PayPal" height="40">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <h5>Đơn vị vận chuyển</h5>
+                            <div class="d-flex flex-wrap align-items-center gap-5">
+                                <img src="../img/ghn.png" alt="GHN" height="40">
+                                <img src="../img/ghtk.png" alt="GHTK" height="40">
+                                <img src="../img/vtp.png" alt="Viettel Post" height="40">
+                                <img src="../img/vnpost.jpg" alt="VNPost" height="40">
+                                <img src="../img/jt.png" alt="J&T Express" height="40">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dòng cuối -->
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                        <p>&copy; 2025 FIT, IUH. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+            </footer>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-custom w-100 text-center" id="loginModalLabel">Đăng nhập</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text rounded-start-pill bg-light ">
+                                    <i class="fa-solid fa-user text-custom"></i>
+                                </span>
+                                <input type="tel" class="form-control rounded-pill ps-3 custom-input input-focus"
+                                    id="phone-login" placeholder="Số điện thoại" required>
+                            </div>
+                            <span class="valid valid-phone-login"></span>
+
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text rounded-start-pill bg-light">
+                                    <i class="fa-solid fa-lock " style="color: #ff0000;"></i>
+                                </span>
+                                <input type="password" class="form-control border-end-0 ps-3 custom-input input-focus"
+                                    id="password-login" placeholder="Nhập mật khẩu" required>
+                                <span class="input-group-text bg-light rounded-end-pill toggle-password custom-eye  "
+                                    style="cursor: pointer;">
+                                    <i class="fa-solid fa-eye-slash text-custom"></i>
+                                </span>
+                            </div>
+                            <span class="valid valid-pass-login"></span>
+                        </div>
+
+                        <button type="submit" id="login-btn" class="btn btn-custom w-100 rounded-pill">
+                            <i class="fa-solid fa-user me-2"></i> Đăng nhập
+                        </button>
+                    </form>
+                    <!-- Phần "Hoặc tiếp tục với" -->
+                    <div class="text-center mt-3">
+                        <p class="text-muted">Hoặc tiếp tục với</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#"
+                                class="btn btn-outline-custom rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="btn btn-outline-custom rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                            <a href="#"
+                                class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <p>Chưa có tài khoản? <a href="../html/register.html" class="text-custom">Đăng ký ngay</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalA" tabindex="-1" aria-labelledby="modalALabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-custom" id="modalALabel">Chọn địa điểm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <h6 class="mb-2">Địa điểm cửa hàng</h6>
+                            <div class="location-buttons">
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option"
+                                    data-location="Hồ Chí Minh">
+                                    Hồ Chí Minh
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option"
+                                    data-location="Hà Nội">
+                                    Hà Nội
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option"
+                                    data-location="Đà Nẵng">
+                                    Đà Nẵng
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option"
+                                    data-location="Cần Thơ">
+                                    Cần Thơ
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option"
+                                    data-location="Nha Trang">
+                                    Nha Trang
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option"
+                                    data-location="Đà Lạt">
+                                    Đà Lạt
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option"
+                                    data-location="Huế">
+                                    Huế
+                                </button>
+                                <button class="btn btn-outline-secondary rounded-pill mb-2 me-2 location-option"
+                                    data-location="Hải Phòng">
+                                    Hải Phòng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="chatbot-button"
+        class="position-fixed bottom-0 end-0 m-4 rounded-circle shadow d-flex flex-column align-items-center justify-content-center bg-white"
+        style="width: 70px; height: 70px; z-index: 1050; cursor: pointer;">
+        <img src="../img/chatbot.png" alt="Chatbot" width="40" height="40">
+        <small class="text-primary">Trợ lý</small>
+    </div>
+
+    <div id="chatbot-box" class="card position-fixed bottom-0 end-0 m-4 shadow"
+        style="width: 20em; height: 30em; z-index: 1050; display: none;">
+        <div class="card-header bg-custom text-white d-flex justify-content-between align-items-center">
+            <span><i class="fa-solid fa-robot me-2"></i>Trợ lí ảo</span>
+            <button id="close-chat" class="btn-close btn-close-white"></button>
+        </div>
+
+        <div class="card-body d-flex flex-column justify-content-between p-2">
+            <div id="chat-content" class="mb-2 overflow-auto" style="height: 21em;">
+                <div class="mb-2">
+                    <div class="d-flex align-items-start">
+                        <img src="../img/chatbot.png" width="30" class="rounded-circle me-2"
+                            style="background-color: #e0e0e0;">
+                        <div class="bg-light rounded px-3 py-2">
+                            <p class="mb-0">Xin chào Anh/Chị! Em là trợ lý ảo của shop.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="d-flex align-items-start">
+                        <img src="../img/chatbot.png" width="30" class="rounded-circle me-2"
+                            style="background-color: #e0e0e0;">
+                        <div class="bg-light rounded px-3 py-2">
+                            <p class="mb-0">Em rất sẵn lòng hỗ trợ Anh/Chị 😊</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column mt-3">
+                    <button class="btn btn-outline-custom btn-sm mb-2 text-start">Top 5 máy lạnh bán chạy</button>
+                    <button class="btn btn-outline-custom btn-sm text-start">Danh sách tivi được ưa chuộng
+                        nhất</button>
+                </div>
+            </div>
+
+            <div class="d-flex border-top pt-2">
+                <input type="text" id="message" class="form-control rounded-start-pill border-0"
+                    placeholder="Nhập tin nhắn...">
+                <button class="btn btn-outline-secondary rounded-end-pill border-0">
+                    <i class="fa-solid fa-paper-plane text-primary"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Thanh Toán Thành Công -->
+    <div class="modal fade" id="paymentSuccessModal" tabindex="-1" aria-labelledby="paymentSuccessModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="paymentSuccessModalLabel">Thanh Toán Thành Công</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <div class="mb-4">
+                        <i class="fa-solid fa-circle-check text-success fa-5x"></i>
+                    </div>
+                    <h4 class="mb-3">Cảm ơn quý khách!</h4>
+                    <p class="mb-4">Đơn hàng của bạn đã được thanh toán thành công. Chúng tôi sẽ xử lý đơn hàng và giao
+                        hàng trong thời gian sớm nhất.</p>
+                    <p class="mb-1"><strong>Mã đơn hàng:</strong> <span id="orderCode">DH-123456789</span></p>
+                    <p class="text-muted small">Vui lòng giữ mã đơn hàng để tra cứu và liên hệ khi cần.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">Đóng</button>
+                    <a href="../index.html" class="btn btn-custom">Tiếp tục mua sắm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
