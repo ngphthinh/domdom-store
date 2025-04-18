@@ -14,7 +14,6 @@
 </head>
 
 <body>
-      
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
@@ -36,7 +35,26 @@
                     <li class="nav-item"><a class="nav-link" href="../index.html">Trang chủ</a></li>
                     <li class="nav-item"><a class="nav-link" href="../html/guarantee.html">Bảo hành</a></li>
                     <li class="nav-item"><a class="nav-link" href="../html/contact.html">Liên hệ</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu mt-3" aria-labelledby="brandFilterDropdown">
+                            <li>
+                                <a class="dropdown-item" href="../html/samsung.html" data-value="samsung">
+                                    <img src="../img/tt1.png" height="35" width="100" alt="Samsung" class="mx-3">
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a class="dropdown-item" href="../html/panasonic.html" data-value="panasonic">
+                                    <img src="../img/tt4.png" height="35" width="100" alt="Samsung" class="mx-3">
+                                </a>
+                            </li>
+                        </ul>
+                      </li>
                     <li class="nav-item"><a class="nav-link" href="../html/blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../html/about.html">Giới thiệu</a></li>
                 </ul>
 
                 <!-- Thanh tìm kiếm -->
@@ -55,8 +73,7 @@
                         data-bs-target="#loginModal">
                         <i class="fa-solid fa-user"></i> Đăng nhập
                     </a>
-                    <a href="../html/cart.html"
-                        class="btn-custom-nav text-white text-decoration-none position-relative">
+                    <a href="../html/cart.html" class="btn-custom-nav text-white text-decoration-none position-relative">
                         <span class="product-quantity"></span>
                         <i class="fa-solid fa-cart-shopping me-1"></i> Giỏ hàng
                     </a>
